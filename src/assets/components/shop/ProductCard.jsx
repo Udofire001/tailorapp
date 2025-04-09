@@ -1,4 +1,5 @@
 import React from "react";
+import Shop from "./Shop";
 
 const ProductCard = ({ product }) => {
     return (
