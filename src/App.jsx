@@ -1,16 +1,19 @@
 import React from 'react';
 import { useState } from 'react'
 import './App.css'
-import Shop from './assets/components/shop/Shop'
+import Navbar from './assets/components/Navbar';
+import Shop from './assets/components/shop/Shop';
+
 
 function App() {
 
   return (
-    <div className='min-h-screen bg-gray-100'>
-    <Shop />
+    <div className='bg-gray-50 min-h-screen'>
+      <Navbar />
+      <Shop />
  
     </div>
-  )
-}
+  );
+};
 
 export default App;
