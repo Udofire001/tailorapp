@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 
 const Navbar = () => {
-    const [mobileMenuOpen, setMobileOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navItems = ["Shop", "Measurements", "Dashboard", "Login"];
 
@@ -36,7 +36,7 @@ const Navbar = () => {
             {mobileMenuOpen && (
                 <ul className="md:hidden px-6 pb-4 space-y-3 text-gray-700 font-medium text-sm bg-white shadow-md">
                     {navItems.map((item)  => (
-                        <li key={item} className="hover:text-blue-600 cursor-pointer">{item}</li>
+                        <li key={item} onclick={() => setMobileMenuOpen(false)} className="hover:text-blue-600 cursor-pointer">{item}</li>
                     ))}
                 </ul>
             )}
